@@ -1,0 +1,83 @@
+.landing-page-container .navigation-container {
+    background: transparent;
+}
+
+
+.landing-page-container .navigation-container .nav-menu .nav-item .nav-link {
+    font-size: var(--small-font);
+    color: rgba(72, 72, 72, 1);
+}
+
+.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-up {
+    padding: 10px 32px;
+    border-radius: 8px;
+    background-color: var(--primary-blue);
+}
+
+.landing-page-container .navigation-container .nav-menu .navbar-btns {
+    padding-right: 100px;
+}
+
+.landing-page-container .navigation-container .nav-menu .nav-menu-items {
+    gap: 40px;
+}
+
+.landing-page-container .navigation-container .navigation-logo {
+    padding-left: 100px;
+}
+
+.landing-page-container .navigation-container .navbar-toggler {
+    margin-right: 70px;
+}
+
+.landing-page-container .navigation-container .nav-fluid .navbar-toggler:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+
+/* Media Queries - Landing Page */
+
+@media only screen and (max-width: 1399px) {
+    .landing-page-container .navigation-container .nav-menu .nav-menu-items {
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .landing-page-container .navigation-container .nav-menu .navbar-btns {
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .landing-page-container .navigation-container .navigation-logo {
+        padding-left: 0px;
+    }
+
+    .landing-page-container .navigation-container .navbar-toggler {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .landing-page-container .navigation-container .nav-menu {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .landing-page-container .navigation-container .nav-menu .navbar-btns {
+        flex-direction: column;
+    }
+
+    .landing-page-container .navigation-container .nav-fluid {
+        padding: 0px;
+    }
+}

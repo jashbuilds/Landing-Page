@@ -1,0 +1,22 @@
+:root{
+    /* Color Variables */
+    --primary-blue: rgba(21, 114, 211, 1);
+    --dark-blue: rgba(5, 28, 52, 1);
+    --off-white: rgba(214, 214, 214, 1);
+    --secondary-dark: #3E3E3E;
+    --primary-white: #FFFFFF;
+
+    /* Font Variables */
+    --large-font: 48px;
+    --regular-font: 18px;
+    --small-font: 16px;
+    --xsmall-font: 14px;
+}
+
+.landing-page-container{
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-cols-height{
+    height: 280px;
+}
