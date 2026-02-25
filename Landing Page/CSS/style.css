@@ -6,9 +6,12 @@
     --secondary-dark: #3E3E3E;
     --primary-white: #FFFFFF;
     --light-gray: rgba(182, 182, 182, 1);
+    --primary-blue-transparent: rgba(21, 114, 211, 0.1);
+    --dark-gray: rgba(109, 109, 109, 1);
 
     /* Font Variables */
     --large-font: 48px;
+    --medium-font: 35px;
     --regular-font: 18px;
     --small-font: 16px;
     --xsmall-font: 14px;
@@ -18,6 +21,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.footer-cols-height{
-    height: 280px;
+.font-primary-blue{
+    color: var(--primary-blue);
+}
+.font-38{
+    font-size: 38px;
+}
+.font-twenty{
+    font-size: 20px;
+}
+.font-fourteen{
+    font-size: 14px;
 }
