@@ -9,6 +9,8 @@
     --light-gray: rgba(182, 182, 182, 1);
     --primary-blue-transparent: rgba(21, 114, 211, 0.1);
     --dark-gray: rgba(109, 109, 109, 1);
+    --dark-gray-2: rgba(38, 38, 38, 1);
+    --medium-gray: rgba(128, 128, 128, 1);
 
     /* Font Variables */
     --large-font: 48px;
@@ -33,30 +35,54 @@
 .font-primary-blue{
     color: var(--primary-blue);
 }
+
 .font-dark-gray{
     color: var(--dark-gray);
 }
+
+.font-dark-gray-2{
+    color: var(--dark-gray-2);
+}
+
+.font-medium-gray{
+    color: var(--medium-gray);
+}
+
 .font-38{
     font-size: 38px;
 }
+
 .font-20{
     font-size: 20px;
 }
+
 .font-16{
     font-size: 16px;
 }
+
 .font-14{
     font-size: 14px;
 }
+
+.font-12{
+    font-size: 12px;
+}
+
 .w-85{
     width: 85%;
 }
+
 .w-80{
     width: 80%;
 }
+
 .w-70{
     width: 70%;
 }
+
 .w-60{
     width: 60%;
+}
+.w-305{
+    width: 305px;
 }
