@@ -1,6 +1,7 @@
 :root{
     /* Color Variables */
     --primary-blue: rgba(21, 114, 211, 1);
+    --primary-blue-dark: rgb(7, 90, 179);
     --dark-blue: rgba(5, 28, 52, 1);
     --off-white: rgba(214, 214, 214, 1);
     --secondary-dark: #3E3E3E;
@@ -12,6 +13,7 @@
     /* Font Variables */
     --large-font: 48px;
     --medium-font: 35px;
+    --semi-medium-font: 30px;
     --regular-font: 18px;
     --small-font: 16px;
     --xsmall-font: 14px;
@@ -20,16 +22,41 @@
 .landing-page-container{
     font-family: 'Poppins', sans-serif;
 }
+.font-dark-black{
+    color: rgba(0, 0, 0, 1);
+}
+
+.font-offwhite{
+    color: var(--off-white);
+}
 
 .font-primary-blue{
     color: var(--primary-blue);
 }
+.font-dark-gray{
+    color: var(--dark-gray);
+}
 .font-38{
     font-size: 38px;
 }
-.font-twenty{
+.font-20{
     font-size: 20px;
 }
-.font-fourteen{
+.font-16{
+    font-size: 16px;
+}
+.font-14{
     font-size: 14px;
+}
+.w-85{
+    width: 85%;
+}
+.w-80{
+    width: 80%;
+}
+.w-70{
+    width: 70%;
+}
+.w-60{
+    width: 60%;
 }

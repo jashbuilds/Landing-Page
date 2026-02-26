@@ -7,6 +7,10 @@
     height: 100%;
 }
 
+.landing-page-container .footer-container .container, .landing-page-container .footer-container .footer-row .footer-cols .list-item .links:hover {
+    color: var(--primary-blue);
+}
+
 .landing-page-container .footer-container .footer-row .footer-hr {
     height: 2px;
 }
@@ -42,6 +46,7 @@
 .landing-page-container .footer-container .footer-contact .contact-list .list-para {
     max-width: 200px;
     font-size: var(--xsmall-font);
+    color: var(--off-white) !important;
 }
 
 

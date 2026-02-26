@@ -7,11 +7,24 @@
     font-size: var(--small-font);
     color: rgba(72, 72, 72, 1);
 }
+.landing-page-container .navigation-container .nav-menu .nav-item .nav-link:hover,
+.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-in:hover {
+    color: var(--primary-blue);
+}
+
+.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-in:focus {
+    border: none;
+}
 
 .landing-page-container .navigation-container .nav-menu .navbar-btns .sign-up {
     padding: 10px 32px;
     border-radius: 8px;
     background-color: var(--primary-blue);
+    transition: 0.3s ease;
+}
+
+.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-up:hover {
+    background-color: var(--primary-blue-dark);
 }
 
 .landing-page-container .navigation-container .nav-menu .navbar-btns {

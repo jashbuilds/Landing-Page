@@ -4,9 +4,9 @@
 .landing-page-container .hero-wrapper {
     position: relative;
     background-image: url('../Images/hero-bg.svg');
-    background-position: top right;
+    background-size: 870px 885px !important;
+    background-position: top right -15%;
     background-repeat: no-repeat;
-    background-size: 45%;
 }
 
 
@@ -21,6 +21,10 @@
     top: -28%;
     right: 0;
     z-index: -1;
+}
+
+.landing-page-container .hero-wrapper .hero .hero-section {
+    height: 770px;
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head {
@@ -80,8 +84,13 @@
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-button .search-text {
-    padding: 10px 45px !important;
+    padding: 10px 55px !important;
     background-color: var(--primary-blue);
+    transition: 0.3s ease;
+}
+
+.landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-button .search-text:hover {
+    background-color: var(--primary-blue-dark);
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .row>.search-item:nth-child(-n+2)::after {
@@ -134,12 +143,6 @@
     margin-bottom: 10px;
 }
 
-.landing-page-container .main .section-work {
-    margin-top: 140px;
-}
-
-
-
 .landing-page-container .main .section-work .brand-slider {
     overflow: hidden;
     margin-top: 120px !important;
@@ -148,7 +151,6 @@
 .landing-page-container .main .section-work .brand-slider:hover .brand-track {
     animation-play-state: paused;
 }
-
 
 .landing-page-container .main .section-work .brand-slider .brand-track {
     display: flex;
@@ -180,8 +182,58 @@
     }
 }
 
+/* WHY CHOOSE US Section */
+
+.landing-page-container .main .section-why-choose-us {
+    margin-top: 110px;
+    height: 800px;
+    background-image: url(../Images/arrow-up-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0% 80%;
+}
 
 
+.landing-page-container .main .section-why-choose-us .why-choose-us-container .why-choose-us {
+    width: 180px;
+    height: 42px;
+    background-color: var(--primary-blue-transparent);
+    border-radius: 8px;
+    font-size: var(--xsmall-font);
+}
+
+.landing-page-container .main .section-why-choose-us .why-choose-us-container .card-content .icon-container {
+    width: 73px !important;
+    height: 64px !important;
+    background-color: var(--primary-blue-transparent);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-container .main .section-why-choose-us .why-choose-us-container .audi-container .audi-img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two {
+    padding-left: 50px;
+}
+
+
+/* Deals Section */
+
+.landing-page-container .main .section-deals .deals-heading .deals-head {
+    font-size: var(--xsmall-font);
+    width: 226px;
+    height: 42px;
+    background-color: var(--primary-blue-transparent);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-blue);
+}
 
 
 
@@ -200,6 +252,12 @@
 
 /* Media Queries - Landing Page */
 
+@media only screen and (max-width: 1399px) {
+    .landing-page-container .hero-wrapper {
+        background-size: 650px 790px !important;
+    }
+}
+
 
 @media only screen and (max-width: 1340px) {
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head {
@@ -209,6 +267,11 @@
 
 
 @media only screen and (max-width: 1200px) {
+
+    .landing-page-container .hero-wrapper .hero .hero-section {
+        height: 650px;
+    }
+
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head {
         margin-left: 100px;
         margin-top: 0px;
@@ -226,10 +289,20 @@
         font-size: var(--xsmall-font);
     }
 
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .offer-text {
+        font-size: var(--medium-font);
+        width: 100% !important;
+    }
+
 }
 
 
 @media only screen and (max-width: 991px) {
+
+    .landing-page-container .hero-wrapper .hero .hero-section {
+        height: auto;
+    }
+
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-button {
         width: 100% !important;
         display: flex;
@@ -268,15 +341,50 @@
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-img-container .hero-img {
         width: 80% !important;
     }
+
+    .landing-page-container .main .section-work {
+        margin-top: 140px;
+    }
+
+    .landing-page-container .main .section-why-choose-us {
+        height: auto;
+        background-position: 0% 0%;
+    }
+
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container {
+        margin-top: 116px;
+    }
+
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .card-content .card-subhead {
+        width: 100% !important;
+    }
+
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .offer-text {
+        font-size: var(--semi-medium-font);
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .landing-page-container .footer-container .footer-row .footer-cols {
         height: 200px;
     }
+
+    .landing-page-container .hero-wrapper {
+        background-image: none;
+    }
 }
 
 @media only screen and (max-width: 576px) {
+
     .landing-page-container .footer-container .footer-row {
         margin-left: 30px !important;
     }
@@ -288,4 +396,10 @@
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head .hero-para {
         font-size: var(--small-font);
     }
+
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .offer-text {
+        font-size: var(--semi-medium-font);
+    }
+
+
 }
