@@ -41,6 +41,7 @@
 
 .landing-page-container .navigation-container .navbar-toggler {
     margin-right: 70px;
+    border: none;
 }
 
 .landing-page-container .navigation-container .nav-fluid .navbar-toggler:focus {
