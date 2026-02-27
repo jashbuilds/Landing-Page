@@ -11,6 +11,10 @@
     color: var(--primary-blue);
 }
 
+.landing-page-container .footer-container .footer-row .footer-cols {
+    height: 280px;
+}
+
 .landing-page-container .footer-container .footer-row .footer-hr {
     height: 2px;
 }

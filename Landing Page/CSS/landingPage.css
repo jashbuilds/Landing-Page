@@ -1,6 +1,5 @@
 /* Landing Page CSS */
 
-
 .landing-page-container .hero-wrapper {
     position: relative;
     background-image: url('../Images/hero-bg.svg');
@@ -8,8 +7,6 @@
     background-position: top right -15%;
     background-repeat: no-repeat;
 }
-
-
 
 /* Hero-Section CSS */
 
@@ -103,8 +100,6 @@
     background: var(--off-white);
 }
 
-
-
 /* Work Section */
 
 .landing-page-container .main .section-work .how-it-work {
@@ -114,7 +109,6 @@
     border-radius: 8px;
     font-size: var(--xsmall-font);
 }
-
 
 .landing-page-container .main .section-work .card .icon-container {
     width: 112px;
@@ -192,7 +186,6 @@
     background-position: 0% 80%;
 }
 
-
 .landing-page-container .main .section-why-choose-us .why-choose-us-container .why-choose-us {
     width: 180px;
     height: 42px;
@@ -219,7 +212,6 @@
 .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two {
     padding-left: 50px;
 }
-
 
 /* Deals Section */
 
@@ -315,7 +307,6 @@
     }
 }
 
-
 /* Download Section */
 
 .landing-page-container .main .section-download {
@@ -335,19 +326,6 @@
 .landing-page-container .main .section-download .text-free {
     color: var(--primary-blue);
 }
-
-
-/* Footer CSS */
-
-.landing-page-container .footer-container .footer-row .footer-cols {
-    height: 280px;
-}
-
-
-
-
-
-
 
 /* Media Queries - Landing Page */
 
