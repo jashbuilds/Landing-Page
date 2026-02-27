@@ -316,6 +316,25 @@
 }
 
 
+/* Download Section */
+
+.landing-page-container .main .section-download {
+    background-image: url(../Images/download-bg.png);
+    background-repeat: no-repeat;
+}
+
+.landing-page-container .main .section-download .download-text {
+    width: 161px;
+    height: 42px;
+    background-color: var(--primary-blue-transparent);
+    border-radius: 8px;
+    font-size: var(--xsmall-font);
+    margin-top: 120px;
+}
+
+.landing-page-container .main .section-download .text-free {
+    color: var(--primary-blue);
+}
 
 
 /* Footer CSS */

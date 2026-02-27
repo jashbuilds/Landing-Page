@@ -60,6 +60,10 @@
     color: var(--medium-gray);
 }
 
+.font-48{
+    font-size: var(--large-font);
+}
+
 .font-38{
     font-size: 38px;
 }
