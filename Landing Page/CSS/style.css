@@ -101,10 +101,14 @@
     font-size: var(--xlarge-font);
 }
 
+.no-wrap-text {
+    text-wrap: nowrap;
+}
+
 /* Custom Width Classes */
 
 .w-90{
-    width: 90%;
+    width: 90% !important;
 }
 
 .w-88{
@@ -122,6 +126,11 @@
 .w-60{
     width: 60%;
 }
+
+.w-55 {
+    width: 55%;
+}
+
 .w-305{
     width: 305px;
 }

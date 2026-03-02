@@ -3,12 +3,14 @@
     background-color: var(--dark-blue);
 }
 
-.landing-page-container .footer-container .container, .landing-page-container .footer-container .footer-row{
+.landing-page-container .footer-container .container,
+.landing-page-container .footer-container .footer-row {
     height: 100%;
 }
 
-.landing-page-container .footer-container .container, .landing-page-container .footer-container .footer-row .footer-cols .list-item .links:hover {
-    color: var(--primary-blue);
+.landing-page-container .footer-container .container,
+.landing-page-container .footer-container .footer-row .footer-cols .list-item .links:hover {
+    color: var(--light-blue);
 }
 
 .landing-page-container .footer-container .footer-row .footer-cols {
@@ -30,20 +32,20 @@
     gap: 8px;
 }
 
-.landing-page-container .footer-container .footer-row .social-icons{
+.landing-page-container .footer-container .footer-row .social-icons {
     gap: 16px;
 }
 
-.landing-page-container .footer-container .list-item{
+.landing-page-container .footer-container .list-item {
     font-size: var(--xsmall-font);
     color: var(--off-white);
 }
 
-.landing-page-container .footer-container .footer-contact .contact-list{
+.landing-page-container .footer-container .footer-contact .contact-list {
     gap: 10px;
 }
 
-.landing-page-container .footer-container .footer-contact .contact-list .list-tag{
+.landing-page-container .footer-container .footer-contact .contact-list .list-tag {
     font-size: var(--small-font);
 }
 
@@ -53,11 +55,27 @@
     color: var(--off-white) !important;
 }
 
+.landing-page-container .footer-container .footer-contact .contact-list .list-para .list-text:hover {
+    color: var(--light-blue) !important;
+}
 
+
+@media only screen and (max-width: 767px) {
+    .landing-page-container .footer-container .footer-row .footer-cols {
+        height: auto;
+    }
+}
 
 
 @media only screen and (max-width: 576px) {
     .landing-page-container .footer-container .footer-row {
         margin-left: 40px;
+    }
+    .landing-page-container .footer-container .footer-row .footer-hr {
+        width: 90%;
+    }
+    .landing-page-container .footer-container .footer-row .footer-cols {
+        margin-top: 30px !important;
+        height: auto !important;
     }
 }
