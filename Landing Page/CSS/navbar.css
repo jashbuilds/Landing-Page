@@ -1,59 +1,59 @@
-.landing-page-container .navigation-container {
+.landing-page-container .hero-wrapper .navigation-container {
     background: transparent;
 }
 
-.landing-page-container .navigation-container .nav-menu .nav-menu-items .nav-item .nav-link {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items .nav-item .nav-link {
     font-size: var(--small-font);
     color: rgba(72, 72, 72, 1);
     padding: 8px !important;
 }
 
-.landing-page-container .navigation-container .nav-menu .nav-menu-items .nav-item {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items .nav-item {
     transition: 0.4s ease;
 }
 
-.landing-page-container .navigation-container .nav-menu .nav-menu-items .nav-item:hover {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items .nav-item:hover {
     background-color: var(--primary-blue-transparent);
     border-radius: 8px;
 }
 
-.landing-page-container .navigation-container .nav-menu .nav-menu-items .nav-item .nav-link:hover,
-.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-in:hover {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items .nav-item .nav-link:hover,
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns .sign-in:hover {
     color: var(--primary-blue);
 }
 
-.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-in:focus {
-    border: none;
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns .sign-in:focus {
+    border: 1px solid transparent;
 }
 
-.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-up {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns .sign-up {
     padding: 10px 32px;
     border-radius: 8px;
     background-color: var(--primary-blue);
     transition: 0.3s ease;
 }
 
-.landing-page-container .navigation-container .nav-menu .navbar-btns .sign-up:hover {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns .sign-up:hover {
     background-color: var(--primary-blue-dark);
 }
 
-.landing-page-container .navigation-container .nav-menu .navbar-btns {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns {
     padding-right: 100px;
 }
 
-.landing-page-container .navigation-container .nav-menu .nav-menu-items {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items {
     gap: 40px;
 }
 
-.landing-page-container .navigation-container .navigation-logo {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .navigation-logo {
     padding-left: 100px;
 }
 
-.landing-page-container .navigation-container .navbar-toggler {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .navbar-toggler {
     border: none;
 }
 
-.landing-page-container .navigation-container .nav-fluid .navbar-toggler:focus {
+.landing-page-container .hero-wrapper .navigation-container .nav-fluid .navbar-toggler:focus {
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -65,14 +65,14 @@
 /* Media Queries - Landing Page */
 
 @media only screen and (max-width: 1399px) {
-    .landing-page-container .navigation-container .nav-menu .nav-menu-items {
+    .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items {
         margin-top: 30px;
         align-items: center;
         justify-content: center;
         gap: 20px;
     }
 
-    .landing-page-container .navigation-container .nav-menu .navbar-btns {
+    .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns {
         padding-right: 0px;
         margin-top: 30px;
     }
@@ -80,29 +80,33 @@
 
 
 @media only screen and (max-width: 992px) {
-    .landing-page-container .navigation-container .navigation-logo {
+    .landing-page-container .hero-wrapper .navigation-container .nav-fluid .navigation-logo {
         padding-left: 0px !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .landing-page-container .navigation-container .nav-menu {
+    .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu {
         max-width: 60%;
+    }
+    .landing-page-container .hero-wrapper .navigation-container {
+        padding: 38px !important;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .landing-page-container .navigation-container .nav-menu .navbar-btns {
+    .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns {
         flex-direction: column;
     }
 
-    .landing-page-container .navigation-container .nav-fluid {
+    .landing-page-container .hero-wrapper .navigation-container .nav-fluid {
         padding: 0px;
     }
+    
 }
 
 @media only screen and (max-width: 460px) {
-    .landing-page-container .hero-wrapper {
+    .landing-page-container .hero-wrapper{
         background-position: right top;
         background-size: 300px 740px !important;
     }

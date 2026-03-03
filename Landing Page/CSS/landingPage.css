@@ -47,6 +47,7 @@
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card {
     background: var(--primary-white);
     margin-top: -29px;
+    border-radius: 12px;
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-item {
@@ -60,13 +61,14 @@
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-item .card-subheading {
     font-size: var(--xsmall-font);
-    color: var(--light-gray);
+    color: var(--light-gray-2);
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-button .search-text {
-    padding: 10px 55px !important;
+    padding: 11px 50px !important;
     background-color: var(--primary-blue);
     transition: 0.3s ease;
+    border-radius: 8px;
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .search-button .search-text:hover {
@@ -80,7 +82,7 @@
     top: 25%;
     height: 50%;
     width: 1px;
-    background: var(--light-gray);
+    background: var(--light-gray-2);
 }
 
 /* Work Section */
@@ -263,6 +265,7 @@
 .landing-page-container .main .section-download {
     background-image: url('../Images/download-bg.png');
     background-repeat: no-repeat;
+    background-size: 43% 100%;
 }
 
 .landing-page-container .main .section-download .download-container .download-placeholder {
@@ -271,7 +274,7 @@
     background-color: var(--primary-blue-transparent);
     border-radius: 8px;
     font-size: var(--xsmall-font);
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .landing-page-container .main .section-download .download-container .download-text .text-free {
@@ -279,6 +282,20 @@
 }
 
 /* Media Queries - Landing Page */
+
+@media only screen and (max-width: 1600px) {
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card {
+        width: 90% !important;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card {
+        width: 80% !important;
+        margin-top: 50px;
+    }
+}
 
 @media only screen and (max-width: 1399px) {
     .landing-page-container .hero-wrapper {
@@ -331,6 +348,10 @@
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .card-content .card-subhead {
         width: 75% !important;
     }
+
+    .landing-page-container .main .section-download {
+        background-size: 50% 100%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -351,7 +372,7 @@
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .row {
-        gap: 10px;
+        gap: 5px 10px;
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head {
@@ -441,6 +462,14 @@
     .landing-page-container .main .section-download .app-img {
         justify-content: center !important;
     }
+
+    .landing-page-container .main .section-download {
+        background-size: 60% 50%;
+    }
+
+    .landing-page-container .main .section-download .download-container .download-placeholder {
+        margin-top: 70px;
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -487,7 +516,8 @@
     }
 
     .landing-page-container .hero-wrapper {
-        background-size: 543px 900px !important;
+        background-position: top right;
+        background-size: 500px 710px !important;
     }
 
     .landing-page-container .main .section-deals .deals-heading .deals-subhead {
@@ -506,7 +536,16 @@
     .landing-page-container .main .section-why-choose-us {
         background-size: 91% 40%;
     }
+
+    .landing-page-container .main .section-work .rent-steps {
+        font-size: 30px !important;
+    }
+
+    .landing-page-container .main .section-download {
+        background-image: none;
+    }
 }
+
 
 @media only screen and (max-width: 576px) {
 
@@ -531,7 +570,7 @@
     }
 
     .landing-page-container .hero-wrapper {
-        background-size: 400px 800px !important;
+        background-image: none;
     }
 }
 
@@ -576,10 +615,6 @@
 }
 
 @media only screen and (max-width: 460px) {
-    .landing-page-container .hero-wrapper {
-        background-size: 260px 580px !important;
-    }
-
     .landing-page-container .main .section-why-choose-us {
         background-size: 100% 27%;
     }
