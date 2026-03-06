@@ -44,7 +44,7 @@
 }
 
 .landing-page-container .hero-wrapper .navigation-container .nav-fluid .navigation-logo {
-    padding-left: 125px;
+    padding-left: 110px;
 }
 
 .landing-page-container .hero-wrapper .navigation-container .nav-fluid .navbar-toggler {
@@ -76,8 +76,14 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .landing-page-container .navigation-container .navigation-logo {
+        padding-left: 42px !important;
+    }
+}
 
-@media only screen and (max-width: 992px) {
+
+@media only screen and (max-width: 991px) {
     .landing-page-container .hero-wrapper .navigation-container .nav-fluid .navigation-logo {
         padding-left: 0px !important;
     }

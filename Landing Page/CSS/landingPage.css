@@ -15,7 +15,7 @@
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head {
     max-width: 390px;
-    margin-left: 173px;
+    margin-left: 156px;
     margin-top: 70px;
 }
 
@@ -48,7 +48,7 @@
     background: var(--primary-white);
     border-radius: 12px;
     box-shadow: 0px 6px 12px 0px #135EAC1F;
-    margin: -29px 150px 0px 160px;
+    margin: -29px 150px 0px 145px;
 }
 
 .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-item {
@@ -96,19 +96,19 @@
     font-size: var(--xsmall-font);
 }
 
-.landing-page-container .main .section-work .card .icon-container {
+.landing-page-container .main .section-work .icon-container {
     width: 112px;
     height: 112px;
     background-color: var(--light-cyan);
     border-radius: 16px;
 }
 
-.landing-page-container .main .section-work .card .card-para {
+.landing-page-container .main .section-work .card-para {
     max-width: 230px;
     color: var(--dark-gray);
 }
 
-.landing-page-container .main .section-work .card .card-head {
+.landing-page-container .main .section-work .card-head {
     margin-bottom: 10px;
     color: var(--black);
 }
@@ -183,16 +183,16 @@
     margin: 70px auto;
 }
 
-.landing-page-container .main .section-deals .cards-row .card-container .card .btn-primary {
+.landing-page-container .main .section-deals .cards-row .card-container .btn-primary {
     background-color: var(--primary-blue) !important;
 }
 
-.landing-page-container .main .section-deals .cards-row .card-container .card .btn-primary:hover{
+.landing-page-container .main .section-deals .cards-row .card-container .btn-primary:hover{
     background-color: var(--primary-blue-dark) !important;
 }
 
-.landing-page-container .main .section-deals .cards-row .card-container .card .card-img-container {
-    height: 150px;
+.landing-page-container .main .section-deals .cards-row .card-container .card-img-container {
+    height: 140px;
     border-radius: 16px;
 }
 
@@ -209,6 +209,7 @@
     width: 215px;
     height: 50px;
     margin-top: 70px;
+    border-color: var(--light-gray-3) !important;
 }
 
 /* Testimonials Section */
@@ -237,7 +238,7 @@
 }
 
 .landing-page-container .main .section-testimonials .card-slider .card-track .card-container .card-img-container .card-img {
-    border-radius: 17px 0px 0px 17px !important;
+    border-radius: 24px 0px 0px 24px !important;
 }
 
 .landing-page-container .main .section-testimonials .card-slider {
@@ -275,7 +276,7 @@
 .landing-page-container .main .section-download {
     background-image: url('../Images/download-bg.png');
     background-repeat: no-repeat;
-    background-size: 43% 100%;
+    background-size: 41.5% 100%;
 }
 
 .landing-page-container .main .section-download .download-container .download-placeholder {
@@ -308,7 +309,10 @@
 
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .offer-text {
         font-size: var(--medium-font);
-        width: 100% !important;
+        width: 90% !important;
+    }
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .card-content .card-subhead {
+        width: 75% !important;       
     }
 
 }
@@ -316,6 +320,15 @@
 @media only screen and (max-width: 1399px) {
     .landing-page-container .hero-wrapper {
         background-size: 650px 790px !important;
+    }
+    .landing-page-container .main .section-download .download-container { 
+        padding-left: 50px;
+    }
+    .landing-page-container .main .section-work .rent-steps,
+    .landing-page-container .main .section-deals .deals-heading .deals-subhead,
+    .landing-page-container .main .section-testimonials .testimonials-heading,
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .offer-text {
+        font-size: var(--medium-font);
     }
 }
 
@@ -333,6 +346,27 @@
     }
 }
 
+@media only screen and (max-width: 1255px) {
+
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-item .search-content {
+        justify-content: center;
+    }
+
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-button {
+        width: 100% !important;
+        display: grid;
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
 
     .landing-page-container .hero-wrapper .hero .hero-section {
@@ -340,12 +374,20 @@
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head {
-        margin-left: 100px;
+        margin-left: 88px;
         margin-top: 0px;
     }
 
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head .hero-para {
+        font-size: var(--small-font);
+    }
+
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head .hero-heading {
+        font-size: var(--medium-font);
+    }
+
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card {
-        margin-top: 50px;
+        margin: 15px 77px 0px 77px;
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-item {
@@ -356,20 +398,31 @@
         font-size: var(--xsmall-font);
     }
 
+    .landing-page-container .main .section-work .rent-steps,
+    .landing-page-container .main .section-deals .deals-heading .deals-subhead,
+    .landing-page-container .main .section-testimonials .testimonials-heading,
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .offer-text {
         font-size: var(--semi-medium-font);
     }
 
-    .landing-page-container .main .section-deals .cards-row .card-container .card .card-body .lamborghini-text {
-        margin-top: -24px;
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .offer-text {
+        width: 100% !important;
     }
 
-    .landing-page-container .navigation-container .navigation-logo {
-        padding-left: 55px !important;
+    .landing-page-container .main .section-deals .cards-row .card-container .card-img-container {
+        margin-top: 20px;
+    }
+
+    .landing-page-container .main .section-deals .cards-row {
+        justify-content: center;
+    }
+
+    .landing-page-container .main .section-deals .cards-row .card-container {
+        width: 45%;
     }
 
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .card-content .card-subhead {
-        width: 75% !important;
+        width: 85% !important;
     }
 
     .landing-page-container .main .section-download {
@@ -383,34 +436,20 @@
     }
 
     .landing-page-container .main .section-download .download-container {
-        padding: 0px 55px;
+        padding: 0px 70px;
     } 
+
+    .landing-page-container .main .section-download .download-container .store-img {
+        width: auto;
+        height: auto;
+    }
     
     .landing-page-container .main .section-download .download-container .download-text {
         font-size: var(--medium-font) !important;
     }
-}
-
-@media only screen and (max-width: 1255px) {
-
-    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head .hero-heading .text-easily .line-curve {
+        bottom: -7px;
     }
-
-    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-button {
-        width: 100% !important;
-        display: grid;
-        grid-row: 2;
-        grid-column: 1 / span 3;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-item .search-content {
-        margin-left: 10px;
-    }
-
 }
 
 
@@ -425,7 +464,9 @@
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box {
-        gap: 5px 10px;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head {
@@ -450,6 +491,7 @@
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-img-container .hero-img {
         width: 80% !important;
+        padding-top: 20px;
     }
 
     .landing-page-container .main .section-work {
@@ -467,15 +509,25 @@
     }
 
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two {
-        padding: 30px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .card-content .card-subhead {
         width: 100% !important;
+    }
+
+    .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .card-content .card-head {
+        margin-top: 13px;
     }
 
     .landing-page-container .main .section-why-choose-us .why-choose-us-container .col-two .offer-text {
@@ -490,7 +542,11 @@
         margin-top: 40px;
     }
 
-    .landing-page-container .main .section-deals .cards-row .card-container .card .card-body .lamborghini-text,
+    .landing-page-container .main .section-deals .cards-row .card-container .card-img-container {
+        margin-top: 0px;
+    }
+
+    .landing-page-container .main .section-deals .cards-row .card-container .card-body .lamborghini-text,
     .landing-page-container .main .section-deals .cards-row {
         margin-top: 0px !important;
     }
@@ -506,14 +562,20 @@
         align-items: center;
         text-align: center;
         margin-bottom: 0px;
+        padding: 0px 20px;
     }
 
     .landing-page-container .main .section-download .download-container .download-text {
         font-size: var(--medium-font);
+        width: 100% !important;
     }
 
     .landing-page-container .main .section-download .app-img {
         justify-content: center !important;
+    }
+
+    .landing-page-container .main .section-download .app-img .download-img {
+        width: 75% !important;
     }
 
     .landing-page-container .main .section-download {
@@ -524,8 +586,8 @@
         margin-top: 70px;
     }
 
-    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box {
-        grid-template-columns: 1fr 1fr;
+    .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-item .search-content {
+        justify-content: start;
     }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .search-card .box .search-button {
@@ -593,10 +655,10 @@
 
     .landing-page-container .main .section-deals .deals-heading .deals-subhead {
         text-align: center;
-        font-size: var(--semi-medium-font);
     }
 
     .landing-page-container .main .section-deals .cards-row .card-container .card-img-container {
+        height: 175px;
         margin-top: 40px;
     }
 
@@ -604,12 +666,12 @@
         width: 93%;
     }
 
-    .landing-page-container .main .section-why-choose-us {
-        background-size: 91% 40%;
+    .landing-page-container .main .section-deals .cards-row .card-container {
+        width: 100%;
     }
 
-    .landing-page-container .main .section-work .rent-steps {
-        font-size: 30px !important;
+    .landing-page-container .main .section-why-choose-us {
+        background-size: 91% 40%;
     }
 
     .landing-page-container .main .section-download {
@@ -619,10 +681,6 @@
 
 
 @media only screen and (max-width: 576px) {
-
-    .landing-page-container .footer-container .footer-row {
-        margin-left: 30px !important;
-    }
 
     .landing-page-container .hero-wrapper .hero .hero-section .hero-container .hero-head-container .hero-head .hero-heading {
         font-size: var(--medium-font);
@@ -643,6 +701,8 @@
     .landing-page-container .hero-wrapper {
         background-image: none;
     }
+
+    
 }
 
 @media only screen and (max-width: 560px) {
@@ -688,5 +748,12 @@
 @media only screen and (max-width: 460px) {
     .landing-page-container .main .section-why-choose-us {
         background-size: 100% 27%;
+    }
+    .landing-page-container .main .section-deals .cards-row .card-container .card-img-container {
+        margin-top: 10px;
+    }
+
+    .landing-page-container .main .section-download .download-container {
+        padding: 0px 10px;
     }
 }
