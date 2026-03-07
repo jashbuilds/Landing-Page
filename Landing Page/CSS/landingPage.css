@@ -667,7 +667,7 @@
     }
 
     .landing-page-container .main .section-deals .cards-row .card-container {
-        width: 75%;
+        width: 100%;
     }
 
     .landing-page-container .main .section-why-choose-us {
@@ -751,10 +751,6 @@
     }
     .landing-page-container .main .section-deals .cards-row .card-container .card-img-container {
         margin-top: 10px;
-    }
-
-    .landing-page-container .main .section-deals .cards-row .card-container {
-        width: 100%;
     }
 
     .landing-page-container .main .section-download .download-container {
