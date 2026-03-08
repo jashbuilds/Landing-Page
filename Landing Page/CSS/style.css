@@ -5,7 +5,7 @@
     --primary-blue-dark: rgb(7, 90, 179);
     --dark-blue: rgba(5, 28, 52, 1);
     --off-white: rgba(214, 214, 214, 1);
-    --secondary-dark: #3E3E3E;
+    --secondary-dark: rgba(62, 62, 62, 1);
     --primary-white: #FFFFFF;
     --light-gray: rgba(182, 182, 182, 1);
     --light-gray-2: rgba(172, 172, 172, 1);
@@ -20,9 +20,12 @@
     --dark-gray-5: rgba(89, 89, 89, 1);
     --black: rgba(0, 0, 0, 1);
     --light-black: rgba(51, 51, 51, 1);
+    --secondary-light-black: rgba(56, 56, 56, 1);
     --light-black-1: rgba(62, 62, 62, 1);
     --light-black-2: rgba(72, 72, 72, 1);
     --light-black-3: rgba(41, 41, 41, 1);
+    --light-black-4: rgba(40, 40, 40, 1);
+    --light-black-5: rgba(37, 37, 37, 1);
     --light-cyan: rgba(236, 245, 255, 1);
     --medium-gray-1: rgba(149, 149, 149, 1);
     --medium-light-gray: rgba(156, 156, 156, 1);
@@ -49,8 +52,16 @@
     background-color: var(--primary-blue) !important;
 }
 
+.font-primary-blue {
+    color: var(--primary-blue);
+}
+
 .font-light-black-3 {
     color: var(--light-black-3);
+}
+
+.font-secondary-dark {
+    color: var(--secondary-dark);
 }
 
 .font-dark-black {
@@ -97,12 +108,36 @@
     color: var(--medium-gray-1);
 }
 
+.font-light-gray {
+    color: var(--light-gray);
+}
+
+.font-light-gray-2 {
+    color: var(--light-gray-2);
+}
+
 .font-light-black {
     color: var(--light-black);
 }
 
+.font-secondary-light-black {
+    color: var(--secondary-light-black);
+}
+
 .font-light-black-1 {
     color: var(--light-black-1);
+}
+
+.font-light-black-2 {
+    color: var(--light-black-2);
+}
+
+.font-light-black-4 {
+    color: var(--light-black-4);
+}
+
+.font-light-black-5 {
+    color: var(--light-black-5);
 }
 
 /* Custom Font Size Classes */
@@ -207,6 +242,10 @@
     margin-top: 45px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
+
 .mt-60 {
     margin-top: 60px;
 }
@@ -225,6 +264,10 @@
 
 .mb-35 {
     margin-bottom: 35px;
+}
+
+.ml-3 {
+    margin-left: 3px !important;
 }
 
 /* Custom padding class */
@@ -274,5 +317,11 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px !important; 
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px !important; 
   }
 }

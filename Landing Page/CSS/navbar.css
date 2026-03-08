@@ -1,8 +1,6 @@
 /* Navbar CSS */
 
 .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items .nav-item .nav-link {
-    font-size: var(--small-font);
-    color: var(--light-black-2);
     padding: 8px !important;
 }
 
