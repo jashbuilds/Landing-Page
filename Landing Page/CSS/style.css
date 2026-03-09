@@ -1,10 +1,14 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 :root {
     /* Color Variables */
     --primary-blue: rgba(21, 114, 211, 1);
     --primary-blue-dark: rgb(7, 90, 179);
     --dark-blue: rgba(5, 28, 52, 1);
     --off-white: rgba(214, 214, 214, 1);
-    --secondary-dark: #3E3E3E;
+    --secondary-dark: rgba(62, 62, 62, 1);
     --primary-white: #FFFFFF;
     --light-gray: rgba(182, 182, 182, 1);
     --light-gray-2: rgba(172, 172, 172, 1);
@@ -19,12 +23,22 @@
     --dark-gray-5: rgba(89, 89, 89, 1);
     --black: rgba(0, 0, 0, 1);
     --light-black: rgba(51, 51, 51, 1);
+<<<<<<< HEAD
     --light-black-1: rgba(62, 62, 62, 1);
     --light-black-2: rgba(72, 72, 72, 1);
     --light-black-3: rgba(41, 41, 41, 1);
+=======
+    --secondary-light-black: rgba(56, 56, 56, 1);
+    --light-black-1: rgba(62, 62, 62, 1);
+    --light-black-2: rgba(72, 72, 72, 1);
+    --light-black-3: rgba(41, 41, 41, 1);
+    --light-black-4: rgba(40, 40, 40, 1);
+    --light-black-5: rgba(37, 37, 37, 1);
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
     --light-cyan: rgba(236, 245, 255, 1);
     --medium-gray-1: rgba(149, 149, 149, 1);
     --medium-light-gray: rgba(156, 156, 156, 1);
+    --denim-blue-alpha: rgba(16, 76, 139, 0.16);
 
     /* Font Variables */
     --xlarge-font: 64px;
@@ -47,8 +61,33 @@
     background-color: var(--primary-blue) !important;
 }
 
+<<<<<<< HEAD
 .font-light-black-3 {
     color: var(--light-black-3);
+}
+
+.font-dark-black {
+    color: var(--black);
+}
+
+.font-offwhite {
+    color: var(--off-white);
+}
+
+=======
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
+.font-primary-blue {
+    color: var(--primary-blue);
+}
+
+<<<<<<< HEAD
+=======
+.font-light-black-3 {
+    color: var(--light-black-3);
+}
+
+.font-secondary-dark {
+    color: var(--secondary-dark);
 }
 
 .font-dark-black {
@@ -63,6 +102,7 @@
     color: var(--primary-blue);
 }
 
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 .font-dark-gray {
     color: var(--dark-gray);
 }
@@ -95,12 +135,36 @@
     color: var(--medium-gray-1);
 }
 
+.font-light-gray {
+    color: var(--light-gray);
+}
+
+.font-light-gray-2 {
+    color: var(--light-gray-2);
+}
+
 .font-light-black {
     color: var(--light-black);
 }
 
+.font-secondary-light-black {
+    color: var(--secondary-light-black);
+}
+
 .font-light-black-1 {
     color: var(--light-black-1);
+}
+
+.font-light-black-2 {
+    color: var(--light-black-2);
+}
+
+.font-light-black-4 {
+    color: var(--light-black-4);
+}
+
+.font-light-black-5 {
+    color: var(--light-black-5);
 }
 
 /* Custom Font Size Classes */
@@ -126,11 +190,19 @@
 }
 
 .font-16 {
+<<<<<<< HEAD
     font-size: 16px;
 }
 
 .font-14 {
     font-size: 14px !important;
+=======
+    font-size: var(--small-font);
+}
+
+.font-14 {
+    font-size: var(--xsmall-font) !important;
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 }
 
 .font-12 {
@@ -171,6 +243,10 @@
     width: 55%;
 }
 
+.w-54 {
+    width: 54%;
+}
+
 .w-45 {
     width: 45%;
 }
@@ -201,10 +277,24 @@
     margin-top: 45px;
 }
 
+<<<<<<< HEAD
+=======
+.mt-40 {
+    margin-top: 40px;
+}
+
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 .mt-60 {
     margin-top: 60px;
 }
 
+<<<<<<< HEAD
+=======
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 .mb-75 {
     margin-bottom: 75px !important;
 }
@@ -215,6 +305,10 @@
 
 .mb-35 {
     margin-bottom: 35px;
+}
+
+.ml-3 {
+    margin-left: 3px !important;
 }
 
 /* Custom padding class */
@@ -237,8 +331,9 @@
     gap: 16.26px;
 }
 
-/* Flex Class */
+/* Shadow Class */
 
+<<<<<<< HEAD
 .flexible-center {
     display: flex;
     justify-content: center;
@@ -250,4 +345,38 @@
 .card-shadow {
     box-shadow: 0px 12px 24px 0px #104C8B29;
     border-radius: 24px !important;
+=======
+.card-shadow {
+    box-shadow: 0px 12px 24px 0px var(--denim-blue-alpha);
+}
+
+.rounded-24 {
+    border-radius: 24px !important;
+}
+
+/* Common Media Queries */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important; 
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px !important; 
+  }
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 }

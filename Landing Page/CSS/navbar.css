@@ -1,8 +1,6 @@
 /* Navbar CSS */
 
 .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items .nav-item .nav-link {
-    font-size: var(--small-font);
-    color: var(--light-black-2);
     padding: 8px !important;
 }
 
@@ -36,7 +34,11 @@
 }
 
 .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .navbar-btns {
+<<<<<<< HEAD
     padding-right: 115px;
+=======
+    padding-right: 112px;
+>>>>>>> 6dbec5fb3efafe0e335a68f75025f77c16013d00
 }
 
 .landing-page-container .hero-wrapper .navigation-container .nav-fluid .nav-menu .nav-menu-items {
